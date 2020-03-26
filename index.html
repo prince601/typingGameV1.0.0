@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Typing game" />
+    <meta name="author" content="Prince Kabasele" />
+    <link
+      rel="shortcut icon"
+      href="img/ic_whatshot_black_18dp.png"
+      type="image/png"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Typing Game</title>
+  </head>
+  <body>
+    <main class="container">
+      <header class="header">
+        <h1>Word Beater</h1>
+      </header>
+      <div class="card-center">
+        <h3 class="heading-counter">
+          Type the Given word within <span id="counter"> 0 </span>Seconds
+        </h3>
+        <h3 id="current-word"></h3>
+        <form autocomplete="off">
+          <div class="input-wrapper">
+            <input
+              type="text"
+              id="word-input"
+              placeholder="Start Typing..."
+              autofocus
+            />
+          </div>
+        </form>
+        <h4 id="message"></h4>
+        <div class="row-one">
+          <h3 class="heading-time">
+            Timeleft:
+            <span id="time">0</span>
+          </h3>
+          <h3 class="heading-score">
+            Score:
+            <span id="score">0</span>
+          </h3>
+        </div>
+        <div class="row-two">
+          <h3>Instruction</h3>
+          <p>
+            Type the word in the given amount of time to score! to play again,
+            just type the current word and the score will reset!
+          </p>
+        </div>
+      </div>
+    </main>
+    <script src="js/main.js"></script>
+  </body>
+</html>
